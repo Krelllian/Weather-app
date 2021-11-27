@@ -6,18 +6,18 @@ import './cssReset.scss';
 import './App.scss';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import allReducers from './reducers';
+//import allReducers from './reducers';
 
 
-const store = createStore(allReducers,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+//const store = createStore(allReducers,
+//    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 
 
 const appElement = document.getElementById('root');
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>
+    // <Provider store={store}>
+    <App />
+    // </Provider>
     , appElement);
