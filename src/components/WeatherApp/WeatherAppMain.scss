@@ -18,7 +18,7 @@
 
     @media (max-width: 950px) {
         min-width: 400px;
-        min-height: 600px;
+        min-height: 650px;
     }
 
 }
@@ -88,8 +88,10 @@ margin-bottom: 30px;
     margin-bottom: 20px;
     padding-bottom: 4px;
     @media(max-width: 950px) {
-       border-radius: 5px;
+       border-radius: 7px;
         background: linear-gradient(45deg, #2ea8ff, #80d0c7);
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     span{
