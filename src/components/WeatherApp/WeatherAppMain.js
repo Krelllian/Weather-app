@@ -49,11 +49,11 @@ function WeatherAppMain() {
                     <div className='weather-app_left-col' style={{ background: `no-repeat center url(${img_1})` }}>
 
                     </div >
-                    <div className='weather-app_right-col'>
+                    <div className='weather-app_right-col' style={{ background: `no-repeat center url(${img_1})` }}>
                         <form className="weather-app_form" onSubmit={(e) => { e.preventDefault(); gettingWeather(e) }} >
                             <input className="weather-app_city-input" type="text" name="city" placeholder="Введите город" onChange={trackValue}  >
                             </input>
-                            <button className="weather-app_form-button">Отобразить погоду</button>
+                            <button className="weather-app_form-button">Показать погоду</button>
                         </form>
                         {weatherData && <div className="weather-app_data data">
                             <div className="weather-app_data-header">

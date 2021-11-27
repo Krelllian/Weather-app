@@ -18,7 +18,7 @@
 
     @media (max-width: 950px) {
         min-width: 400px;
-        min-height: 570px;
+        min-height: 600px;
     }
 
 }
@@ -28,6 +28,9 @@
     height: 30px;
     border: none;
     border-radius: 4px 0 0 4px;
+    @media (max-width: 950px) {
+        border-radius: 4px;
+    }
 
     &::placeholder {
         padding-left: 40px;
@@ -41,6 +44,7 @@
     padding: 0 15px;
     border-radius: 0 4px 4px 0;
     white-space: nowrap;
+    cursor: pointer;
 
     @media (max-width: 950px) {
         display: block;
@@ -64,6 +68,9 @@
     width: 60%;
     text-align: center;
 
+    @media (min-width: 951px) {
+        background: none !important;
+    }
     @media (max-width: 950px) {
         width: 100%;
     }
@@ -78,6 +85,12 @@ margin-bottom: 30px;
     color: black;
     font-size: 48px;
     margin-bottom: 20px;
+    padding-bottom: 4px;
+    @media(max-width: 950px) {
+       border-radius: 5px;
+        background: linear-gradient(45deg, #2ea8ff, #80d0c7);
+    }
+
     span{
         display: block;
         margin-top: -8px;
@@ -90,8 +103,20 @@ margin-bottom: 30px;
 
 .weather-app_data {
     font-size: 28px;
+    @media(max-width: 950px) {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     p {
         margin-top: 10px;
+        @media(max-width: 950px) {
+            padding: 0 10px 5px;
+            border-radius: 4px;
+            margin-top: 11px;
+            background: linear-gradient(45deg, #2ea8ff, #80d0c7);
+            text-shadow: 1px 1px 1px #fff;
+        }
     }
     @media (max-width: 950px) {
         font-size: 24px;
@@ -100,4 +125,13 @@ margin-bottom: 30px;
 .data-span {
     color: white;
     font-size: 30px;
+    text-shadow: none;
+}
+
+.weather-app_app-error {
+    @media(max-width: 950px) {
+        padding: 5px 0;
+        background: linear-gradient(45deg, #2ea8ff, #80d0c7);
+        border-radius: 3px;
+    }
 }
